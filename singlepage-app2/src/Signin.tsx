@@ -15,7 +15,7 @@ class Signin extends Component<IProps,IState>{
    }
     myfun=(event:any)=>{
         event.preventDefault()
-     this.props.history.push(`/Registration/${this.uname.current?.value}/${this.uname.current?.value}`);
+     this.props.history.push(`/Registration/${this.uname.current?.value}/${this.upwd.current?.value}`);
 
    }
    render(){
