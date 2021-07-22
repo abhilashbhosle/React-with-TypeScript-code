@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "data-parser": "^1.0.1",
+    "express": "^4.17.1",
+    "mongodb": "^4.0.0"
+  }
+}
