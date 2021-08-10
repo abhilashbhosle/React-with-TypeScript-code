@@ -1,14 +1,16 @@
-import React, { createContext } from 'react';
+import React,{useState} from 'react';
+import Login from './component/Login';
+import Profile from './component/Profile';
 import logo from './logo.svg';
 import './App.css';
-import ComA from "./ComA"
-export const Fname=React.createContext({});
+import { logincontext } from './context-api/LoginContext';
 function App() {
+  const[username,setUsername]=useState("")
+  const[showprofile,setShowprofile]=useState(false)
   return (
     <div className="App">
-      <Fname.Provider value={"Abhilash"}>
-      <ComA></ComA>
-      </Fname.Provider>
+      <logincontext.Provider value={{username,setUsername,showprofile,setShowprofile}}> {showprofile?<Profile/>:<Login/>}</logincontext.Provider>
+    
     
     </div>
   );
