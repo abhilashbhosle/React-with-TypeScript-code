@@ -1,24 +1,11 @@
-import React, {Component} from "react";
-interface IState{
-    message:string;
-}
-interface IProps{
+import React,{useState} from "react";
+function HomeScreen(){
+    const [msg]=useState("Ecommerce Application Soon..!")
+    return(
+        <React.Fragment>
+            <h1 style={{color:"red"}}>{msg}</h1>
+        </React.Fragment>
+    )
 
 }
-
-class Page1 extends Component<IProps,IState>{
-    constructor(props:IProps){
-        super(props)
-        this.state={
-            message:"Page One !!!"
-        }
-    }
-    render(){
-        return(
-            <React.Fragment>
-                <h1>{this.state.message}</h1>
-            </React.Fragment>
-        )
-    }
-}
-export default Page1;
+export default HomeScreen;

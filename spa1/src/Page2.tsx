@@ -1,24 +1,11 @@
-import React, {Component} from "react";
-interface IState{
-    message:string;
+import React,{useState} from "react";
+function ProductScreen(){
+    const [msg] = useState("MobilePhones Soon..!")
+    return(
+        <React.Fragment>
+            <h1 style={{color:"red"}}>{msg}</h1>
+        </React.Fragment>
+    )
+    
 }
-interface IProps{
-
-}
-
-class Page2 extends Component<IProps,IState>{
-    constructor(props:IProps){
-        super(props)
-        this.state={
-            message:"Page Two !!!"
-        }
-    }
-    render(){
-        return(
-            <React.Fragment>
-                <h1>{this.state.message}</h1>
-            </React.Fragment>
-        )
-    }
-}
-export default Page2;
+export default ProductScreen

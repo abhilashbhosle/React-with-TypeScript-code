@@ -1,24 +1,11 @@
-import React, {Component} from "react";
-interface IState{
-    message:string;
+import React,{useState} from "react";
+function CartScreen(){
+    const [msg] = useState("Payment Gateways Soon..!")
+    return(
+        <React.Fragment>
+            <h1 style={{color:"red"}}>{msg}</h1>
+        </React.Fragment>
+    )
+    
 }
-interface IProps{
-
-}
-
-class Page3 extends Component<IProps,IState>{
-    constructor(props:IProps){
-        super(props)
-        this.state={
-            message:"Page Three !!!"
-        }
-    }
-    render(){
-        return(
-            <React.Fragment>
-                <h1>{this.state.message}</h1>
-            </React.Fragment>
-        )
-    }
-}
-export default Page3;
+export default CartScreen;
