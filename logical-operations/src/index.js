@@ -9,8 +9,11 @@ import Subtraction from './Subtraction';
 ReactDOM.render(
   <React.StrictMode>
     <Addition />
+    <hr></hr>
     <Multiplication/>
+    <hr></hr>
     <Subtraction/>
+    <hr></hr>
   </React.StrictMode>,
   document.getElementById('root')
 );
