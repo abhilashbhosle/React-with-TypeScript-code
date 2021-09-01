@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 function App() {
   return (
       <div className="container ">
-          <div className="row py-5">
+          <div className="row py">
               <div className="col-md-5">
                   <Signup />
               </div>
